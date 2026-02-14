@@ -66,16 +66,16 @@ for cat in categories:
         
         # 記事詳細の表示
         else:
-            if st.button("← 記事一覧に戻る", key=f"{cat['key']}_back"):
+            if st.button("← 戻る", key=f"top_{cat['key']}_back"):
                 st.session_state[session_key] = None
                 st.rerun()
-                
+
             post = articles[st.session_state[session_key]]
             st.divider()
             st.subheader(post["title"])
             # HTMLが含まれる場合を考慮して unsafe_allow_html=True
             st.markdown(post["content"], unsafe_allow_html=True) 
             
-            if st.button("← 記事一覧に戻る", key=f"{cat['key']}_back"):
+            if st.button("← 記事一覧に戻る", key=f"bottom_{cat['key']}_back"):
                 st.session_state[session_key] = None
                 st.rerun()
