@@ -9,10 +9,10 @@ st.caption("色々書きます")
 
 # サイドバー（プロフィールやリンクなど）
 with st.sidebar:
-    st.markdown("### About")
+    st.markdown("### このサイトについて")
     st.write("色々書きます")
     st.divider()
-    st.write("🔗 [フルムラのサイトへ](https://lolitapayao.neocities.org/)")
+    st.write("🔗 [ロリータパヤオ](https://lolitapayao.neocities.org/)")
 
 # カテゴリータブの作成
 tab1, tab2, tab3 = st.tabs(["怖い話", "雑談", "技術"])
