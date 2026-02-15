@@ -30,6 +30,7 @@ st.caption("色々書きます")
 with st.sidebar:
     st.markdown("### リンク")
     st.write("🔗 [ロリータパヤオ](https://lolitapayao.neocities.org/)")
+    st.write("🔗 [私のかわいい宝石たち。](https://mycutiejewels.neocities.org)")
 
 # タブ作成
 tab1, tab2, tab3 = st.tabs(["怖い話", "雑談", "技術"])
