@@ -33,13 +33,14 @@ with st.sidebar:
     st.write("🔗 [私のかわいい宝石たち。](https://mycutiejewels.neocities.org)")
 
 # タブ作成
-tab1, tab2, tab3 = st.tabs(["怖い話", "雑談", "技術"])
+tab1, tab2, tab3, tab4 = st.tabs(["怖い話", "雑談", "好きな漫画", "技術"])
 
 # 各カテゴリーの処理を一括化するための設定
 categories = [
     {"tab": tab1, "key": "kowai", "label": "怖い話"},
     {"tab": tab2, "key": "zatudan", "label": "雑談"},
-    {"tab": tab3, "key": "gijutsu", "label": "技術"}
+    {"tab": tab3, "key": "manga", "label": "好きな漫画"},
+    {"tab": tab4, "key": "gijutsu", "label": "技術"},
 ]
 
 for cat in categories:
